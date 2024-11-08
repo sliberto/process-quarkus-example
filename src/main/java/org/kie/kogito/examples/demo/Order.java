@@ -15,8 +15,6 @@
  */
 package org.kie.kogito.examples.demo;
 
-import com.equinox.eqloan.service.dto.BorrowerDTO;
-
 public class Order implements java.io.Serializable {
 
     static final long serialVersionUID = 1L;
@@ -24,8 +22,6 @@ public class Order implements java.io.Serializable {
     private java.lang.String orderNumber;
     private java.lang.Boolean shipped;
     private java.lang.Double total;
-
-    private BorrowerDTO borrower;
 
     public Order() {
     }
@@ -52,14 +48,6 @@ public class Order implements java.io.Serializable {
 
     public void setTotal(java.lang.Double total) {
         this.total = total;
-    }
-
-    public BorrowerDTO getBorrower() {
-        return borrower;
-    }
-
-    public void setBorrower(BorrowerDTO borrower) {
-        this.borrower = borrower;
     }
 
     public Order(java.lang.String orderNumber, java.lang.Boolean shipped,

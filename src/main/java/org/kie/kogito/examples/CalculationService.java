@@ -21,8 +21,6 @@ import javax.enterprise.context.ApplicationScoped;
 
 import org.kie.kogito.examples.demo.Order;
 
-import com.equinox.eqloan.service.dto.BorrowerDTO;
-
 @ApplicationScoped
 public class CalculationService {
 
@@ -30,8 +28,6 @@ public class CalculationService {
 
     public Order calculateTotal(Order order) {
         order.setTotal(random.nextDouble());
-        BorrowerDTO b = new BorrowerDTO();
-        b.setFirstName("!!!!");
 
         return order;
     }
